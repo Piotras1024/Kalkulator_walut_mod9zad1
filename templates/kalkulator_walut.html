@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="/" method="POST" id="currencyform">
+
+    <label for="cash">How much zloty do you want to spend ?:</label>
+    <input name="cash" onkeypress='return event.charCode >= 48 && event.charCode <= 57'> zł </input>
+    <input type="submit" value="Submit">
+
+</form>
+
+<label for="currency">Choose a currency:</label>
+
+    <select name="currency" id="currency" form="currencyform">
+    <option value="dolar amerykański">dolar amerykański</option>
+    <option value="dolar australijski">dolar australijski</option>
+    <option value="dolar kanadyjski">dolar kanadyjski</option>
+    <option value="euro">euro</option>
+    <option value="forint (Węgry)">forint (Węgry)</option>
+    <option value="frank szwajcarski">frank szwajcarski</option>
+    <option value="funt szterling">funt szterling</option>
+    <option value="jen (Japonia)">jen (Japonia)</option>
+    <option value="korona czeska">korona czeska</option>
+    <option value="korona duńska">korona duńska</option>
+    <option value="korona norweska">korona norweska</option>
+    <option value="korona szwedzka">korona szwedzka</option>
+    <option value="SDR (MFW)">SDR (MFW)</option>
+
+</select>
+
+
+
+</body>
+</html>
